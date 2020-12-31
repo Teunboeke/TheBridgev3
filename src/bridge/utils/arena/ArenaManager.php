@@ -25,7 +25,7 @@ use pocketmine\item\enchantment\Enchantment;
 
 use pocketmine\utils\Color;
 use pocketmine\utils\TextFormat as T;
-use Scoreboards\Scoreboards;
+use pocketmine\Scoreboards\Scoreboards;
 
 use bridge\utils\Team;
 use bridge\utils\Utils;
