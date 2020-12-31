@@ -1,0 +1,5 @@
+name: TheBridge 
+main: bridge\Main
+version: 1.0.0
+author: Teunboeke 
+api: 3.0.0
