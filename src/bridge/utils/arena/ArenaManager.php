@@ -5,7 +5,6 @@ namespace bridge\utils\arena;
 use pocketmine\level\Position;
 use pocketmine\Player;
 
-
 use pocketmine\math\Vector3;
 use pocketmine\math\Vector2;
 
@@ -25,7 +24,7 @@ use pocketmine\item\enchantment\Enchantment;
 
 use pocketmine\utils\Color;
 use pocketmine\utils\TextFormat as T;
-use pocketmine\Scoreboards\Scoreboards;
+use pocketmine\scoreboards\Scoreboards;
 
 use bridge\utils\Team;
 use bridge\utils\Utils;
