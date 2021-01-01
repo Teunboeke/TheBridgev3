@@ -320,7 +320,7 @@ class Main extends PluginBase{
 							$sender->sendMessage("§7[§bBRIDGE§7] §bLa Arena §a" . $args[1] . "§b Se Ha Creado Correctamente!");
 						}
 					} else {
-						$sender->sendMessage("§7[§bBRIDGE§7] §bUsa §c/tb crear {arena} {modo}");
+						$sender->sendMessage("§7[§bBRIDGE§7] §bUsage §c/tb crear {arena} {modo}");
 						return true;
 					}
 					break;
@@ -329,12 +329,12 @@ class Main extends PluginBase{
 						$npc = new EntityManager();
 						$npc->setMainEntity($sender);
 					} else {
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 					}
 					break;
 					case "delete":
 					if(!$sender->hasPermission("bridge.cmd")){
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 						return true;
 					}
 					if(isset($args[1])){
@@ -366,11 +366,11 @@ class Main extends PluginBase{
 					}
 					break;
 					default:
-					$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+					$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 					break;
 				}
 			} else {
-				$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+				$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 			}
 		}
 	return true;
