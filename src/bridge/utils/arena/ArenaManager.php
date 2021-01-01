@@ -24,11 +24,14 @@ use pocketmine\item\enchantment\Enchantment;
 
 use pocketmine\utils\Color;
 use pocketmine\utils\TextFormat as T;
-use pocketmine\scoreboards\Scoreboards;
 
 use bridge\utils\Team;
 use bridge\utils\Utils;
 use bridge\Main;
+
+use jasonwynn10\ScoreboardAPI\Scoreboard;
+use jasonwynn10\ScoreboardAPI\ScoreboardAPI;
+use jasonwynn10\ScoreboardAPI\ScoreboardEntry;
 
 class ArenaManager{
 	
