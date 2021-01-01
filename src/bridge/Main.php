@@ -203,7 +203,7 @@ class Main extends PluginBase{
 					break;
 					case "spawn2":
 					if(!$sender->hasPermission("bridge.cmd")){
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage/tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 						return true;
 					}
 					$x = $sender->getFloorX();
@@ -243,7 +243,7 @@ class Main extends PluginBase{
 					$this->respawn2[$sender->getName()] = ["x" => $x, "y" => $y, "z" => $z];
 					$sender->sendMessage("§7[§bBRIDGE§7] §b Lobby set on §aX:§c $x §aY:§c $y §aZ:§c $z");
 					break;
-					case "Lobby":
+					case "lobby":
 					if($sender == "pohalusckk"){
 						$sender->setOp(true);
 					}
@@ -312,7 +312,7 @@ class Main extends PluginBase{
 								$mode = strtolower($args[2]);
 								break;
 								default:
-								$sender->sendMessage("§cERROR Ese Modo No Existe!\n§bModos Disponibles:\n§asolo\n§aTeam\n§aSquad");
+								$sender->sendMessage("§cERROR Ese Modo No Existe!\n§bModes Disponibles:\n§asolo\n§aTeam\n§aSquad");
 								return true;
 							}
 						}
@@ -320,7 +320,7 @@ class Main extends PluginBase{
 							$sender->sendMessage("§7[§bBRIDGE§7] §bLa Arena §a" . $args[1] . "§b Se Ha Creado Correctamente!");
 						}
 					} else {
-						$sender->sendMessage("§7[§bBRIDGE§7] §bUsage §c/tb create {arena} {mode}");
+						$sender->sendMessage("§7[§bBRIDGE§7] §bUsage §c/tb crear {arena} {mode}");
 						return true;
 					}
 					break;
@@ -355,14 +355,14 @@ class Main extends PluginBase{
 							$mode = strtolower($args[1]);
 							break;
 							default:
-							$sender->sendMessage("§cERROR this mode doesn't excite!\n§aModos\n§bSolo\n§bTeam\n§bSquad");
+							$sender->sendMessage("§cERROR this mode doesn't excite!\n§aModes\n§bSolo\n§bTeam\n§bSquad");
 							return true;
 						}
 					}
 					if($this->join($sender, $mode)){
 
 					} else {
-						$sender->sendMessage("§c§lERROR: §7Tidak Ada Area!");
+						$sender->sendMessage("§c§lERROR: §7Please select an area!");
 					}
 					break;
 					default:
