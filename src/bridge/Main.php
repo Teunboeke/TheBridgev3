@@ -355,7 +355,7 @@ class Main extends PluginBase{
 							$mode = strtolower($args[1]);
 							break;
 							default:
-							$sender->sendMessage("§cERROR Ese Modo No Existe!\n§aModos\n§bSolo\n§bTeam\n§bSquad");
+							$sender->sendMessage("§cERROR this mode doesn't excite!\n§aModos\n§bSolo\n§bTeam\n§bSquad");
 							return true;
 						}
 					}
