@@ -320,7 +320,7 @@ class Main extends PluginBase{
 							$sender->sendMessage("§7[§bBRIDGE§7] §bLa Arena §a" . $args[1] . "§b Se Ha Creado Correctamente!");
 						}
 					} else {
-						$sender->sendMessage("§7[§bBRIDGE§7] §bUsage §c/tb crear {arena} {modo}");
+						$sender->sendMessage("§7[§bBRIDGE§7] §bUsage §c/tb create {arena} {mode}");
 						return true;
 					}
 					break;
