@@ -19,10 +19,6 @@ use bridge\utils\arena\Arena;
 use bridge\utils\arena\ArenaManager;
 use pocketmine\utils\TextFormat as T;
 
-use jasonwynn10\ScoreboardAPI\Scoreboard; 
-use jasonwynn10\ScoreboardAPI\ScoreboardAPI; 
-use jasonwynn10\ScoreboardAPI\ScoreboardEntry;
-
 class Main extends PluginBase{
 	
 	public $arenas = [];
