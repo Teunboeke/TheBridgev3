@@ -5,7 +5,6 @@ namespace bridge\utils\arena;
 use pocketmine\level\Position;
 use pocketmine\Player;
 
-
 use pocketmine\math\Vector3;
 use pocketmine\math\Vector2;
 
@@ -869,7 +868,7 @@ $api = Scoreboards::getInstance();
 		 $inv = $player->getInventory();
 		 $inv->clearAll();
 		 
-		 $inv->setItem(1, Item::get(120, 0, 1)->setCustomName("§r§aBack To Lobby\n§7 (Precione)"));
+		 $inv->setItem(1, Item::get(120, 0, 1)->setCustomName("§r§aBack To Lobby\n§7 (Tap me)"));
 		 $inv->setItem(4, Item::get(384, 0, 1)->setCustomName("§r§l§e  HABILIDADES§r\n§7(Clique para ver)"));
 		 $inv->setItem(7, Item::get(54, 0, 1)->setCustomName("§r§eTeams\n§7(Precione)"));
 		 
