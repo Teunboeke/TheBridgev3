@@ -1013,12 +1013,12 @@ $api = Scoreboards::getInstance();
 				$this->ponts[$team]++;
 			}
 			$msg = "§l§bT§eB→§r§f§l " . $p->getName() . " §l§4ANOTO§r§6§l " . $this->ponts[$team];
-			$msg2 = " §r§4§l✘RED §l§4Gano El  Partido✘";
+			$msg2 = " §r§4§lRED §l§4Has been registered as red";
 			switch($team){
 				case "blue":
 				$p->addTitle($p->getName() ." §l§eANOTO");
 				$msg = "§l§bT§eB→§r§f§l " . $p->getName() . " §l§1ANOTO§r§6§l " . $this->ponts[$team];
-			$msg2 = " §r§l§1✘BLUE §l§1Gano El Partido✘";
+			$msg2 = " §r§l§1BLUE §l§1has been registered as blue";
 			}
 			$this->broadcast("$msg", 3);
 			if($this->ponts[$team] >= 5){
@@ -1034,7 +1034,7 @@ $api = Scoreboards::getInstance();
 				$this->broadcast("$msg2\n §l§b§•THEBRIDGE§6 §eGANO EL PARTIDO", 2);
 				$this->segs = 10;
 				$this->stat = self::STAT_GANHO;
-				$p->addTitle("§l§6JUEGO TERMINADO!");
+				$p->addTitle("§l§6Waiting for Players!");
 				$this->addWin($team);
 				return true;
 			}
